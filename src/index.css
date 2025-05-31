@@ -24,10 +24,13 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 50px 0;
   display: flex;
-  place-items: center;
+  align-items: start;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #f1f1f1;
 }
 
 h1 {
@@ -65,4 +68,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.transition-size {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 1000px; /* debe ser suficientemente grande */
 }
