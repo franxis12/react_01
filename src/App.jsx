@@ -4,7 +4,11 @@ function App() {
 
   return (
     <>
-        <Counter/>
+     <Routes>
+      <Route path="/" element={<Counter />} />
+      <Route path="/counter" element={<Counter />} />
+    </Routes>
+       
       
     </>
   )
